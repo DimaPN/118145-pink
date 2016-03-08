@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+	 <head>
+	 	<meta charset="utf-8">
+	 	<title>Pink</title>
+	 </head>
+	 <body>
+	 	<header class="header">
+			<div class="header__logo">
+				<img src="http://placehold.it/150x100" alt="logo">
+			</div>
+			<nav class="main-nav">
+				<div class="main-nav__toggle">
+					Open
+				</div>
+				<div class="main-nav__container">
+					<ul class="main-nav__lists">
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Информация</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Возможности</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Отзывы</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Стоимость</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="header__promo-text">
+				<p>
+					Взгляните на жизнь иначе!
+				</p>
+			</section>
+			<div class="header_promo-image">
+				<img src="iphone-in-hand" width="260" height="290" alt="iphone">
+			</div>
+	 	</header>
+	 	<main>
+			<div class="promo-elements">
+				<div class="promo-elements__download">
+					<a href="#">Скачать приложение</a>
+				</div>
+				<div class="promo-element__apple">
+					<a href="#"><img src="#" width="30" height="30" alt="apple"></a>
+				</div>
+				<div class="promo-element__android">
+					<a href="#"><img src="#" width="30" height="30" alt="android"></a>
+				</div>
+				<div class="promo-element__windows">
+					<a href="#"><img src="#" width="30" height="30" alt="windows"></a>
+				</div>
+				<div class="promo-element__legend">
+					<span>
+						Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+					</span>
+				</div>
+			</div>
+			<div class="promo">
+				<span class="promo__question">
+						Устали от серости мегаполиса?
+				</span>
+				<span class="promo__answer">
+						Нам есть, что вам предложить!
+				</span>
+				<div class="promo__container">
+					<div class="promo__slogan">
+						<b>Поднимает настроение</b>
+						<p>
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
+						</p>
+					</div>
+					<div class="promo__slogan">
+						<b>Меняет мир вокруг</b>
+						<p>
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
+					</div>
+					<div class="promo__slogan">
+						<b>Заводит новых друзей</b>
+						<p>
+							Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+						</p>
+					</div>
+					<div class="promo__image">
+						<img src="#" width="160" height="320" alt="phone">
+					</div>
+				</div>
+				<div class="slider-review">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-review__controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					<div class="slider-review__slides">
+						<div class="slider-review__slide1">
+							<b>
+								Николай Петров
+							</b>
+							<p>
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+							</p>
+						</div>
+						<div class="slider-review__slide2">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+						</div>
+						<div class="slider-review__slide3">
 
-  </body>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-package">
+				<input type="radio" id="btn-4" name="pack">
+				<input type="radio" id="btn-5" name="pack" checked>
+				<input type="radio" id="btn-6" name="pack">
+				<div class="slider-package__controls">
+					<label for="btn-4"></label>
+					<label for="btn-5"></label>
+					<label for="btn-6"></label>
+				</div>
+				<div class="slider-package__block">
+					<div class="slider-package__slide1">
+						<table class="slider-package__list">
+							<tr>
+								<th class="slider-package__price">
+									<b>
+										Стандарт
+									</b>
+									<span>3,99 USD</span>
+								</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td class="slider-package__function">
+									Розовый фильтр
+									<img src="#" width="30" height="30" alt="yes">
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="slider-package__function">
+									Смайлики
+									<img src="#" width="30" height="30" alt="yes">
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="slider-package__function">
+									Комментарии
+									<img src="#" width="30" height="30" alt="no">
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+	 	</main>
+	 	<footer class="footer">
+			<div class="footer__container">
+				<section class="footer__title">
+					Остались вопросы?<br>Свяжитесь с нами!
+				</section>
+				<section class="footer__contact-phone">
+					<b>
+						Звоните:
+					</b>
+					<br>
+					<span class="footer__phone">
+						+7(812) 555-66-66
+					</span>
+				</section>
+				<section class="footer__contact-email">
+					<b>
+						Пишите:
+					</b>
+					<br>
+					<span class="footer__email">
+						mail@htmlacademy.ru
+					</span>
+				</section>
+				<section class="footer_contact-adress">
+					<b>
+						Приезжайте в гости:
+					</b>
+					<br>
+					<span class="footer_adress">
+						ул. Большая Конюшенная, 19/8
+					</span>
+				</section>
+			</div>
+	 	</footer>
+
+	 </body>
 </html>
