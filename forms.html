@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Forms</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo">
+				<img src="http://placehold.it/150x100" alt="logo">
+			</div>
+			<nav class="main-nav">
+				<div class="main-nav__toggle">
+					Open
+				</div>
+				<div class="main-nav__container">
+					<ul class="main-nav__lists">
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Главная</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Фотографии</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Конкурс</a>
+						</li>
+						<li class="main-nav__list">
+							<a class="main-nav__link" href="#">Htmlacademy</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="header__promo-text">
+				<p>
+					Конкурс на самое безбашенное путешествие с Пинк
+				</p>
+			</section>
+	 	</header>
+	 	<main>
+			<div class="form">
+				<div class="form__title">
+					<span>
+						Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+					</span>
+				</div>
+				<form action="#" method="post">
+					<section class="form__text">
+						<label for="name" class="form__name">
+							Имя:
+						</label>
+						<input type="text" id="name" name="name" placeholder="Введите ваше имя">
+						<label for="surname" class="form__surname">
+							Фамилия:
+						</label>
+						<input type="text" id="surname" name="surname" placeholder="Укажите фамилию">
+						<label for="patronymic" class="form__patronymic">
+							Отчество:
+						</label>
+						<input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+					</section>
+					<section class="form__checkbox">
+						<span class="form__title-checkbox">
+							Ваши безбашенные <br> достижения в путешествии
+						</span>
+						<input type="checkbox" id="first" checked>
+						<label for="first" class="form__checkbox-name">
+							Сделал селфи с акулой
+						</label>
+						<input type="checkbox" id="second" checked>
+						<label for="second" class="form__checkbox-name">
+							Обгорел на пляже
+						</label>
+						<input type="checkbox" id="third">
+						<label for="third" class="form__checkbox-name">
+							Видел Чака Норриса
+						</label>
+						<input type="checkbox" id="fourth">
+						<label for="fourth" class="form__checkbox-name">
+							Накупил сувениров
+						</label>
+						<input type="checkbox" id="fifth" checked>
+						<label for="fifth" class="form__checkbox-name">
+							Удержал башню
+						</label>
+						<input type="checkbox" id="sixth">
+						<label for="sixth" class="form__checkbox-name">
+							Разгромил отель
+						</label>
+					</section>
+					<section class="form__connection">
+						<label for="phone" class="form__phone">
+							Номер телефончика
+						</label>
+						<input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern>
+						<label for="mail" class="form__mail">
+							Адресок почты
+						</label>
+						<input type="email" id="mail" name="mail" placeholder="E-mail, пожалуйста">
+					</section>
+					<section class="form__apps">
+						<span class="form__title-radio">
+							С каким приложением <br> путешествовали?
+						</span>
+						<input type="radio" name="apps" value="iOS" id="btn1" checked>
+						<label for="btn1" class="form__btn-apps">
+							Pink для iOS
+						</label>
+						<input type="radio" name="apps" value="Android" id="btn2">
+						<label for="btn2" class="form__btn-apps">
+							Pink на Android
+						</label>
+						<input type="radio" name="apps" value="windows" id="btn3">
+						<label for="btn3" class="form__btn-apps">
+							Windows Phone
+						</label>
+					</section>
+					<section class="form__emotion">
+						<span class="form__title-textarea">
+							Опишите свои эмоции
+						</span>
+						<textarea name="emotion" id="emo" rows="10" cols="30">
+							Можно прям в красках, не стесняясь в выражениях
+						</textarea>
+					</section>
+					<button type="submit" value="Отправить форму">
+					</button>
+					<span class="form__required-field">
+						* - Обязательные поля
+					</span>
+				</form>
+			</div>
+	 	</main>
+	 	<footer class="form-footer">
+			<div class="form-footer__pink">
+				<img src="#" width="30" height="30" alt="glasses">
+				<span>PINK</span>
+			</div>
+			<div class="form-footer__social">
+				<a href="#" class="form-footer__btn form-footer__btn__twitter"></a>
+				<a href="#" class="form-footer__btn form-footer__btn__facebook"></a>
+				<a href="#" class="form-footer__btn form-footer__btn__play"></a>
+			</div>
+			<div class="form-footer__copyright">
+				<span>Разработано <a href="#" class="form-footer__copyright-sign"></a>
+				</span>
+			</div>
+	 	</footer>
+	</body>
+</html>
