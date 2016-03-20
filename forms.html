@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Forms</title>
+	</head>
+	<body>
+		<header class="header">
+			<!--LOGO -->
+			<h1 class="header__logo">
+				<a class="header__logo-text">Pink</a>
+				<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+			</h1>
+			<!--NAVIGATION-->
+			<nav class="main-nav">
+				<div class="main-nav__toggle">
+					Open
+				</div>
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Фотографии</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Конкурс</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Htmlacademy</a>
+					</li>
+				</ul>
+			</nav>
+	 	</header>
+	 	<main>
+	 	<!--Jumbotron-->
+	 		<div class="jumbotron">
+				<p>
+					Конкурс на самое безбашенное путешествие с Пинк
+				</p>
+			</div>
+			<!--FORM title-->
+			<div class="form">
+				<div class="form__title">
+					<h2>
+						Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+					</h2>
+				</div>
+				<form action="#" method="post">
+				<!--FORM name surname -->
+					<fieldset class="form__text">
+						<label for="name" class="form__name">
+							Имя:
+							<input type="text" id="name" name="name" placeholder="Введите ваше имя">
+						</label>
+						<label for="surname" class="form__surname">
+							Фамилия:
+							<input type="text" id="surname" name="surname" placeholder="Укажите фамилию">
+						</label>
+						<label for="patronymic" class="form__patronymic">
+							Отчество:
+							<input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+						</label>
+					</fieldset>
+					<!--FORM survey-->
+					<fieldset class="form__checkbox">
+						<h2 class="form__title-checkbox">
+							Ваши безбашенные <br> достижения в путешествии
+						</h2>
+						<label for="first" class="form__checkbox-name">
+							<input type="checkbox" id="first" checked>
+							Сделал селфи с акулой
+						</label>
+
+						<label for="second" class="form__checkbox-name">
+							<input type="checkbox" id="second" checked>
+							Обгорел на пляже
+						</label>
+						<label for="third" class="form__checkbox-name">
+							<input type="checkbox" id="third">
+							Видел Чака Норриса
+						</label>
+						<label for="fourth" class="form__checkbox-name">
+							<input type="checkbox" id="fourth">
+							Накупил сувениров
+						</label>
+						<label for="fifth" class="form__checkbox-name">
+							<input type="checkbox" id="fifth" checked>
+							Удержал башню
+						</label>
+						<label for="sixth" class="form__checkbox-name">
+							<input type="checkbox" id="sixth">
+							Разгромил отель
+						</label>
+					</fieldset>
+					<!--FORM phone email-->
+					<fieldset class="form__connection">
+						<label for="phone" class="form__phone">
+							Номер телефончика
+							<input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern>
+						</label>
+						<label for="mail" class="form__mail">
+							Адресок почты
+							<input type="email" id="mail" name="mail" placeholder="E-mail, пожалуйста">
+						</label>
+					</fieldset>
+					<!--FORM apps-->
+					<fieldset class="form__apps">
+						<h2 class="form__title-radio">
+							С каким приложением <br> путешествовали?
+						</h2>
+						<label for="btn1" class="form__btn-apps">
+							<input type="radio" name="apps" value="iOS" id="btn1" checked>
+							Pink для iOS
+						</label>
+						<label for="btn2" class="form__btn-apps">
+							<input type="radio" name="apps" value="Android" id="btn2">
+							Pink на Android
+						</label>
+						<label for="btn3" class="form__btn-apps">
+							<input type="radio" name="apps" value="windows" id="btn3">
+							Windows Phone
+						</label>
+					</fieldset>
+					<!--FORM review-->
+					<fieldset class="form__emotion">
+						<h2 class="form__title-textarea">
+							Опишите свои эмоции
+						</h2>
+						<textarea name="emotion" id="emo" rows="10" cols="30">
+							Можно прям в красках, не стесняясь в выражениях
+						</textarea>
+					</fieldset>
+					<!--BTN-->
+					<button type="submit" value="Отправить форму">
+					</button>
+					<span class="form__required-field">
+						* - Обязательные поля
+					</span>
+				</form>
+			</div>
+	 	</main>
+	 	<!--Footer-->
+	 	<footer class="footer">
+			<div class="footer__pink">
+				<img src="#" width="30" height="30" alt="glasses">
+				<span>PINK</span>
+			</div>
+			<div class="footer__social">
+				<a href="#" class="footer__btn footer__btn__twitter"></a>
+				<a href="#" class="footer__btn footer__btn__facebook"></a>
+				<a href="#" class="footer__btn footer__btn__play"></a>
+			</div>
+			<div class="footer__copyright">
+				<span>
+					Разработано <a href="#" class="footer__copyright-sign"></a>
+				</span>
+			</div>
+	 	</footer>
+	</body>
+</html>

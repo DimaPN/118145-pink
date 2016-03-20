@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<!--LOGO -->
+			<h1 class="header__logo">
+				<a class="header__logo-text">Pink</a>
+				<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+			</h1>
+			<!--NAVIGATION-->
+			<nav class="main-nav">
+				<div class="main-nav__toggle">
+					Open
+				</div>
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Фотографии</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Конкурс</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Htmlacademy</a>
+					</li>
+				</ul>
+			</nav>
+	 	</header>
+		<main>
+		<!--Jumbotron-->
+			<jumbotron class="header__promo-text">
+				<p>
+					Фотографии пользователей
+				</p>
+			</jumbotron>
+			<!--Title-->
+			<div class="photo-container">
+				<h2 class="photo-container__title">
+					Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+				</h2>
+				<!--Panorama-->
+				<img class="photo-container__panorama" src="#" width="60" height="40" alt="фото">
+				<div class="photo-container__description">
+					<b>Анна</b>(5 минут назад)<br>
+					<p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+					<span>Нравится: 215</span>
+				</div>
+				<!--Block photo-->
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Левон</b>(5 часов назад)<br>
+						<p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 356</span>
+					</div>
+				</article>
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Антон</b>(12 часов назад)<br>
+						<p>Соседи будут рады!</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 666</span>
+					</div>
+				</article>
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Борис</b>(20 часов назад)<br>
+						<p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 215</span>
+					</div>
+				</article>
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Сергей</b>(25 часов назад)<br>
+						<p>Самая кубанская в мире!</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 4</span>
+					</div>
+				</article>
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Максим</b>(40 часов назад)<br>
+						<p>Где снег-то?</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 150</span>
+					</div>
+				</article>
+				<article class="photo-container__item">
+					<img src="#" width="60" height="40" alt="фото">
+					<div class="photo-container__description">
+						<b>Надежда</b>(45 часов назад)<br>
+						<p>Всем GM и взаимные лайки!</p>
+					</div>
+					<div class="photo-container__like">
+						<span>Нравится: 2560</span>
+					</div>
+				</article>
+				<span class="photo-container__promo">
+					Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне
+				</span>
+			</div>
+			<!--Edit picture-->
+			<div class="edit-image">
+				<img src="#" width="60" height="100" alt="фото">
+				<div class="edit-image__edit-elements">
+					<button class="edit-image__crop" type="button">crop</button>
+					<button class="edit-image__contrast" type="button">contrast</button>
+					<button class="edit-image__fill" type="button">fill</button>
+				</div>
+			</div>
+			<!--Slider-->
+			<div class="slider">
+				<div class="slider__line"></div>
+				<div class="slider__roller"></div>
+			</div>
+			<div class="control-element">
+				<input type="button" value="Запостить" class="control-element__btn">
+				<input type="button" value="Отмена" class="control-element__btn">
+			</div>
+		</main>
+		<!--Footer-->
+		<footer class="footer">
+			<div class="footer__pink">
+				<img src="#" width="30" height="30" alt="glasses">
+				<span>PINK</span>
+			</div>
+			<div class="footer__social">
+				<a href="#" class="footer__btn footer__btn__twitter"></a>
+				<a href="#" class="footer__btn footer__btn__facebook"></a>
+				<a href="#" class="footer__btn footer__btn__play"></a>
+			</div>
+			<div class="footer__copyright">
+				<span>
+					Разработано <a href="#" class="footer__copyright-sign"></a>
+				</span>
+			</div>
+	 	</footer>
+ 	</body>
+</html>
