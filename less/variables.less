@@ -1,0 +1,23 @@
+@mobile-widths-only: ~"(max-width: 767px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
+@bg-white: #fff;
+
+.clearfix {
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
