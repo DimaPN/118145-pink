@@ -1,0 +1,40 @@
+.contact {
+		min-height: 610px;
+		background: url("../img/bg-map.png") no-repeat 0 190px;
+
+	&__container {
+		position: relative;
+		padding: 0 35px;
+		text-align: center;
+		background: #fff;
+	}
+	&__title {
+		display: inline-block;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		font-size: 24px;
+		line-height: 1.3;
+		font-weight: normal;
+	}
+	&__info {
+		font-size: 18px;
+		line-height: 1.3;
+		padding-bottom: 30px;
+	}
+	&__method {
+		font-size: 24px;
+		line-height: 1.3;
+		color: red;
+		font-weight: normal;
+	}
+	&__container::after {
+		content: "";
+		position: absolute;
+		width: 320px;
+		height: 100px;
+		left: 0;
+		background-color: green;
+		/*background: url("../bg-triangle-white-footer.svg") repeat;*/
+		z-index: 5;
+	}
+}
