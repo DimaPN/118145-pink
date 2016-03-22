@@ -7,234 +7,236 @@
 		<link rel="stylesheet/less" type="text/css" href="styles.less">
 	</head>
 	<body>
-		<header class="header">
-			<!--LOGO -->
-			<h1 class="header__logo">
-				<span class="header__logo-text">Pink</span>
-				<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
-				<div class="header__toggle header__toggle__closed">
+		<div class="container">
+			<header class="header">
+				<!--LOGO  need to add class header__toggle_opened-->
+				<h1 class="header__logo">
+					<span class="header__logo-text">Pink</span>
+					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+					<div class="header__toggle header__toggle_closed">
+					</div>
+				</h1>
+				<!--NAVIGATION need to remove display:none in less file-->
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Информация</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Возможности</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Отзывы</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- JUMBOTRON-->
+				<div class="jumbotron">
+					<div class="jumbotron__text">
+						Взгляните на жизнь <br> иначе!
+					</div>
+					<img class="jumbotron__img" src="img/iphone-hand-mobile.png" width="260" height="294" alt="iphone">
 				</div>
-			</h1>
-			<!--NAVIGATION-->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Информация</a>
+			</header>
+			<main>
+				<!--Promo elements-->
+				<div class="promo-elements">
+					<div class="promo-elements__btn">
+						<a href="#">Скачать приложение</a>
+					</div>
+					<div class="promo-elements__block">
+						<img class="promo-element__apple" src="img/logo-apple.svg" width="50" height="50" alt="apple">
+						<img class="promo-element__android" src="img/logo-android.svg" width="50" height="50" alt="android">
+						<img class="promo-element__windows" src="img/logo-microsoft.svg" width="50" height="50" alt="windows">
+					</div>
+					<div class="promo-elements__text">
+						Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+					</div>
+				</div>
+				<!--Promo-->
+				<div class="promo">
+					<span class="promo__text">
+						Устали от серости мегаполиса?
+					</span>
+					<span class="promo__text">
+						Нам есть, что вам предложить!
+					</span>
+				</div>
+				<ul class="promo-container">
+					<li class="promo-container__slogan">
+						<b>Поднимает настроение</b>
+						<p>
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
+						</p>
 					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Возможности</a>
+					<li class="promo-container__slogan">
+						<b>Меняет мир вокруг</b>
+						<p>
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
 					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Отзывы</a>
+					<li class="promo-container__slogan">
+						<b>Заводит новых друзей</b>
+						<p>
+							Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+						</p>
 					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Стоимость</a>
+					<li class="promo-container__image">
+
 					</li>
 				</ul>
-			</nav>
-			<!-- JUMBOTRON-->
-			<div class="jumbotron">
-				<div class="jumbotron__text">
-					Взгляните на жизнь <br> иначе!
-				</div>
-				<img class="jumbotron__img" src="img/iphone-hand-mobile.png" width="260" height="290" alt="iphone">
-			</div>
-		</header>
-		<main>
-			<!--Promo elements-->
-			<div class="promo-elements">
-				<div class="promo-elements__btn">
-					<a href="#">Скачать приложение</a>
-				</div>
-				<div class="promo-elements__block">
-					<img class="promo-element__apple" src="img/logo-apple.svg" width="50" height="50" alt="apple">
-					<img class="promo-element__android" src="img/logo-android.svg" width="50" height="50" alt="android">
-					<img class="promo-element__windows" src="img/logo-microsoft.svg" width="50" height="50" alt="windows">
-				</div>
-				<div class="promo-element__text">
-					Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-				</div>
-			</div>
-			<!--Promo-->
-			<div class="promo">
-				<span class="promo__text">
-					Устали от серости мегаполиса?
-				</span>
-				<span class="promo__text">
-					Нам есть, что вам предложить!
-				</span>
-			</div>
-			<ul class="promo-container">
-				<li class="promo-container__slogan">
-					<b>Поднимает настроение</b>
-					<p>
-						Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
-					</p>
-				</li>
-				<li class="promo-container__slogan">
-					<b>Меняет мир вокруг</b>
-					<p>
-						Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-					</p>
-				</li>
-				<li class="promo-container__slogan">
-					<b>Заводит новых друзей</b>
-					<p>
-						Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-					</p>
-				</li>
-				<li class="promo-container__image">
-					<img src="img/iphone-screen-mobile.png" width="160" height="320" alt="phone">
-				</li>
-			</ul>
-			<!--Slider 1-->
-			<div class="slider-review">
-				<div class="slider-review__slides">
-					<div class="slider-review__slide1">
-						<b>
-							Николай Петров
-						</b>
-						<p>
-							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-						</p>
+				<!--Slider 1-->
+				<div class="slider">
+					<div class="slider__slides">
+						<div class="slider__slide1">
+							<b>
+								Николай Петров
+							</b>
+							<p>
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+							</p>
+						</div>
+						<div class="slider__slide2">
+						</div>
+						<div class="slider__slide3">
+						</div>
 					</div>
-					<div class="slider-review__slide2">
-					</div>
-					<div class="slider-review__slide3">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider__controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
 					</div>
 				</div>
-				<input type="radio" id="btn-1" name="toggle" checked>
-				<input type="radio" id="btn-2" name="toggle">
-				<input type="radio" id="btn-3" name="toggle">
-				<div class="slider-review__controls">
-					<label for="btn-1"></label>
-					<label for="btn-2"></label>
-					<label for="btn-3"></label>
-				</div>
-			</div>
-			<!--Slider 2-->
-			<div class="slider-package">
-				<div class="slider-package__block">
-					<div class="slider-package__slide1">
-					<!--Как правильно построить єту таблицу? tablet - desktop?-->
-						<table class="slider-package__list">
-							<tr>
-								<th class="slider-package__blank"></th>
-								<th class="slider-package__baza">
-									<b>База</b>
-									1,99 USD
-								</th>
-								<th class="slider-package__price">
-									<b>
-										Стандарт
-									</b>
-									3,99 USD
-								</th>
-								<th class="slider-package__unlim">
-									<b>Анлим</b>
-									9,99 USD
-								</th>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Розовый фильтр
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Смайлики
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Комментарии
-									<img class="slider-package__img" src="#" width="30" height="30" alt="no">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-								<td>
-									<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
-								</td>
-							</tr>
+				<!--Slider 2-->
+				<div class="slider-table">
+					<div class="slider-table__block">
+						<table class="slider-table__list">
+							<thead class="slider-table__head">
+								<tr class="slider-table__head-row">
+									<th class="slider-table__head1">
+										<b>База</b>
+										<br>
+										1,99 USD
+									</th>
+									<th class="slider-table__head2">
+										<b>
+											Стандарт
+										</b>
+										<br>
+										3,99 USD
+									</th>
+									<th class="slider-table__head3">
+										<b>Анлим</b>
+										<br>
+										9,99 USD
+									</th>
+								</tr>
+							</thead>
+							<tbody class="slider-table__body">
+								<tr class="slider-table__body-row">
+									<td class="slider-table__function">
+										Розовый фильтр
+									</td>
+									<td class="slider-table__function">
+										Розовый фильтр
+									</td>
+									<td class="slider-table__function">
+										Розовый фильтр
+									</td>
+								</tr>
+								<tr class="slider-table__body-row">
+									<td class="slider-table__function">
+										Смайлики
+									</td>
+									<td class="slider-table__function">
+										Смайлики
+									</td>
+									<td class="slider-table__function">
+										Смайлики
+									</td>
+								</tr>
+								<tr class="slider-table__body-row">
+									<td class="slider-table__function">
+										Комментирии
+									</td>
+									<td class="slider-table__function">
+										Комментирии
+									</td>
+									<td class="slider-table__function">
+										Комментирии
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
-				</div>
-				<input type="radio" id="btn-4" name="pack">
-				<input type="radio" id="btn-5" name="pack" checked>
-				<input type="radio" id="btn-6" name="pack">
-				<div class="slider-package__controls">
-					<label for="btn-4"></label>
-					<label for="btn-5"></label>
-					<label for="btn-6"></label>
-				</div>
-			</div>
-			<!--Contact-->
-			<div class="cocntact">
-				<div class="contact__container">
-					<h2 class="contact__title">
-						Остались вопросы?<br>Свяжитесь с нами!
-					</h2>
-					<div class="contact__contact-phone">
-						<b>
-							Звоните:
-						</b>
-						<br>
-						<span class="contact__phone">
-							7(812) 555-66-66
-						</span>
-					</div>
-					<div class="contact__contact-email">
-						<b>
-							Пишите:
-						</b>
-						<br>
-						<span class="contact__email">
-							mail@htmlacademy.ru
-						</span>
-					</div>
-					<div class="contact_contact-adress">
-						<b>
-							Приезжайте в гости:
-						</b>
-						<br>
-						<span class="contact_adress">
-							ул. Большая Конюшенная, 19/8
-						</span>
+					<input type="radio" id="btn-4" name="pack">
+					<input type="radio" id="btn-5" name="pack" checked>
+					<input type="radio" id="btn-6" name="pack">
+					<div class="slider-package__controls">
+						<label for="btn-4"></label>
+						<label for="btn-5"></label>
+						<label for="btn-6"></label>
 					</div>
 				</div>
-			</div>
-		</main>
-		<!--Footer-->
-		<footer class="footer">
-			<div class="footer__pink">
-				<img src="#" width="30" height="30" alt="glasses">
-				<span>PINK</span>
-			</div>
-			<div class="footer__social">
-				<a href="#" class="footer__btn footer__btn__twitter"></a>
-				<a href="#" class="footer__btn footer__btn__facebook"></a>
-				<a href="#" class="footer__btn footer__btn__play"></a>
-			</div>
-			<div class="footer__copyright">
-				<span>
-					Разработано <a href="#" class="footer__copyright-sign"></a>
-				</span>
-			</div>
-	 	</footer>
+				<!--Contact-->
+				<div class="contact">
+					<div class="contact__container">
+						<h2 class="contact__title">
+							Остались вопросы?<br>Свяжитесь с нами!
+						</h2>
+						<div class="contact__info">
+							<b>
+								Звоните:
+							</b>
+							<br>
+							<span class="contact__method">
+								7(812) 555-66-66
+							</span>
+						</div>
+						<div class="contact__info">
+							<b>
+								Пишите:
+							</b>
+							<br>
+							<span class="contact__method">
+								mail@htmlacademy.ru
+							</span>
+						</div>
+						<div class="contact__info">
+							<b>
+								Приезжайте в гости:
+							</b>
+							<br>
+							<span class="contact__method">
+								ул. Большая Конюшенная, 19/8
+							</span>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--Footer-->
+			<footer class="footer">
+				<div class="footer__pink">
+					<img src="#" width="30" height="30" alt="glasses">
+					<span>PINK</span>
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__btn footer__btn__twitter"></a>
+					<a href="#" class="footer__btn footer__btn__facebook"></a>
+					<a href="#" class="footer__btn footer__btn__play"></a>
+				</div>
+				<div class="footer__copyright">
+					<span>
+						Разработано <a href="#" class="footer__copyright-sign"></a>
+					</span>
+				</div>
+		 	</footer>
+		</div>
 	</body>
 	</html>
