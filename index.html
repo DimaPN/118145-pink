@@ -1,206 +1,240 @@
 <!DOCTYPE html>
 <html lang="ru">
-	 <head>
-	 	<meta charset="utf-8">
-	 	<title>Pink</title>
-	 </head>
-	 <body>
-	 	<header class="header">
-			<div class="header__logo">
-				<img src="http://placehold.it/150x100" alt="logo">
+<head>
+	<meta charset="utf-8">
+	<title>Pink</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="styles.less">
+</head>
+<body>
+	<header class="header">
+		<!--LOGO -->
+		<h1 class="header__logo">
+			<span class="header__logo-text">Pink</span>
+			<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+			<div class="header__toggle header__toggle__closed">
 			</div>
-			<nav class="main-nav">
-				<div class="main-nav__toggle">
-					Open
-				</div>
-				<div class="main-nav__container">
-					<ul class="main-nav__lists">
-						<li class="main-nav__list">
-							<a class="main-nav__link" href="#">Информация</a>
-						</li>
-						<li class="main-nav__list">
-							<a class="main-nav__link" href="#">Возможности</a>
-						</li>
-						<li class="main-nav__list">
-							<a class="main-nav__link" href="#">Отзывы</a>
-						</li>
-						<li class="main-nav__list">
-							<a class="main-nav__link" href="#">Стоимость</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<section class="header__promo-text">
+		</h1>
+		<!--NAVIGATION-->
+		<nav class="main-nav">
+			<ul class="main-nav__list">
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Информация</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Возможности</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Отзывы</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Стоимость</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- JUMBOTRON-->
+		<div class="jumbotron">
+			<div class="jumbotron__text">
+				Взгляните на жизнь <br> иначе!
+			</div>
+			<img class="jumbotron__img" src="img/iphone-hand-mobile.png" width="260" height="290" alt="iphone">
+		</div>
+	</header>
+	<main>
+		<!--Promo elements-->
+		<div class="promo-elements">
+			<div class="promo-elements__btn">
+				<a href="#">Скачать приложение</a>
+			</div>
+			<div class="promo-elements__block">
+				<img class="promo-element__apple" src="img/logo-apple.svg" width="50" height="50" alt="apple">
+				<img class="promo-element__android" src="img/logo-android.svg" width="50" height="50" alt="android">
+				<img class="promo-element__windows" src="img/logo-microsoft.svg" width="50" height="50" alt="windows">
+			</div>
+			<div class="promo-element__text">
+				Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+			</div>
+		</div>
+		<!--Promo-->
+		<div class="promo">
+			<span class="promo__text">
+				Устали от серости мегаполиса?
+			</span>
+			<span class="promo__text">
+				Нам есть, что вам предложить!
+			</span>
+		</div>
+		<ul class="promo-container">
+			<li class="promo-container__slogan">
+				<b>Поднимает настроение</b>
 				<p>
-					Взгляните на жизнь иначе!
+					Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
 				</p>
-			</section>
-			<div class="header_promo-image">
-				<img src="iphone-in-hand" width="260" height="290" alt="iphone">
-			</div>
-	 	</header>
-	 	<main>
-			<div class="promo-elements">
-				<div class="promo-elements__download">
-					<a href="#">Скачать приложение</a>
+			</li>
+			<li class="promo-container__slogan">
+				<b>Меняет мир вокруг</b>
+				<p>
+					Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+				</p>
+			</li>
+			<li class="promo-container__slogan">
+				<b>Заводит новых друзей</b>
+				<p>
+					Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+				</p>
+			</li>
+			<li class="promo-container__image">
+				<img src="img/iphone-screen-mobile.png" width="160" height="320" alt="phone">
+			</li>
+		</ul>
+		<!--Slider 1-->
+		<div class="slider-review">
+			<div class="slider-review__slides">
+				<div class="slider-review__slide1">
+					<b>
+						Николай Петров
+					</b>
+					<p>
+						«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+					</p>
 				</div>
-				<div class="promo-element__apple">
-					<a href="#"><img src="#" width="30" height="30" alt="apple"></a>
+				<div class="slider-review__slide2">
 				</div>
-				<div class="promo-element__android">
-					<a href="#"><img src="#" width="30" height="30" alt="android"></a>
-				</div>
-				<div class="promo-element__windows">
-					<a href="#"><img src="#" width="30" height="30" alt="windows"></a>
-				</div>
-				<div class="promo-element__legend">
-					<span>
-						Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-					</span>
-				</div>
-			</div>
-			<div class="promo">
-				<span class="promo__question">
-						Устали от серости мегаполиса?
-				</span>
-				<span class="promo__answer">
-						Нам есть, что вам предложить!
-				</span>
-				<div class="promo__container">
-					<div class="promo__slogan">
-						<b>Поднимает настроение</b>
-						<p>
-							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов
-						</p>
-					</div>
-					<div class="promo__slogan">
-						<b>Меняет мир вокруг</b>
-						<p>
-							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-						</p>
-					</div>
-					<div class="promo__slogan">
-						<b>Заводит новых друзей</b>
-						<p>
-							Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-						</p>
-					</div>
-					<div class="promo__image">
-						<img src="#" width="160" height="320" alt="phone">
-					</div>
-				</div>
-				<div class="slider-review">
-					<input type="radio" id="btn-1" name="toggle" checked>
-					<input type="radio" id="btn-2" name="toggle">
-					<input type="radio" id="btn-3" name="toggle">
-					<div class="slider-review__controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
-						<label for="btn-3"></label>
-					</div>
-					<div class="slider-review__slides">
-						<div class="slider-review__slide1">
-							<b>
-								Николай Петров
-							</b>
-							<p>
-								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-							</p>
-						</div>
-						<div class="slider-review__slide2">
-
-						</div>
-						<div class="slider-review__slide3">
-
-						</div>
-					</div>
+				<div class="slider-review__slide3">
 				</div>
 			</div>
-			<div class="slider-package">
-				<input type="radio" id="btn-4" name="pack">
-				<input type="radio" id="btn-5" name="pack" checked>
-				<input type="radio" id="btn-6" name="pack">
-				<div class="slider-package__controls">
-					<label for="btn-4"></label>
-					<label for="btn-5"></label>
-					<label for="btn-6"></label>
-				</div>
-				<div class="slider-package__block">
-					<div class="slider-package__slide1">
-						<table class="slider-package__list">
-							<tr>
-								<th class="slider-package__price">
-									<b>
-										Стандарт
-									</b>
-									<span>3,99 USD</span>
-								</th>
-								<th></th>
-								<th></th>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Розовый фильтр
-									<img src="#" width="30" height="30" alt="yes">
-								</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Смайлики
-									<img src="#" width="30" height="30" alt="yes">
-								</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td class="slider-package__function">
-									Комментарии
-									<img src="#" width="30" height="30" alt="no">
-								</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</table>
-					</div>
+			<input type="radio" id="btn-1" name="toggle" checked>
+			<input type="radio" id="btn-2" name="toggle">
+			<input type="radio" id="btn-3" name="toggle">
+			<div class="slider-review__controls">
+				<label for="btn-1"></label>
+				<label for="btn-2"></label>
+				<label for="btn-3"></label>
+			</div>
+		</div>
+		<!--Slider 2-->
+		<div class="slider-package">
+			<div class="slider-package__block">
+				<div class="slider-package__slide1">
+					<!--Как правильно построить єту таблицу? tablet - desktop?-->
+					<table class="slider-package__list">
+						<tr>
+							<th class="slider-package__blank"></th>
+							<th class="slider-package__baza">
+								<b>База</b>
+								1,99 USD
+							</th>
+							<th class="slider-package__price">
+								<b>
+									Стандарт
+								</b>
+								3,99 USD
+							</th>
+							<th class="slider-package__unlim">
+								<b>Анлим</b>
+								9,99 USD
+							</th>
+						</tr>
+						<tr>
+							<td class="slider-package__function">
+								Розовый фильтр
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+						</tr>
+						<tr>
+							<td class="slider-package__function">
+								Смайлики
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+						</tr>
+						<tr>
+							<td class="slider-package__function">
+								Комментарии
+								<img class="slider-package__img" src="#" width="30" height="30" alt="no">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+							<td>
+								<img class="slider-package__img" src="#" width="30" height="30" alt="yes">
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
-	 	</main>
-	 	<footer class="footer">
-			<div class="footer__container">
-				<section class="footer__title">
+			<input type="radio" id="btn-4" name="pack">
+			<input type="radio" id="btn-5" name="pack" checked>
+			<input type="radio" id="btn-6" name="pack">
+			<div class="slider-package__controls">
+				<label for="btn-4"></label>
+				<label for="btn-5"></label>
+				<label for="btn-6"></label>
+			</div>
+		</div>
+		<!--Contact-->
+		<div class="cocntact">
+			<div class="contact__container">
+				<h2 class="contact__title">
 					Остались вопросы?<br>Свяжитесь с нами!
-				</section>
-				<section class="footer__contact-phone">
+				</h2>
+				<div class="contact__contact-phone">
 					<b>
 						Звоните:
 					</b>
 					<br>
-					<span class="footer__phone">
-						+7(812) 555-66-66
+					<span class="contact__phone">
+						7(812) 555-66-66
 					</span>
-				</section>
-				<section class="footer__contact-email">
+				</div>
+				<div class="contact__contact-email">
 					<b>
 						Пишите:
 					</b>
 					<br>
-					<span class="footer__email">
+					<span class="contact__email">
 						mail@htmlacademy.ru
 					</span>
-				</section>
-				<section class="footer_contact-adress">
+				</div>
+				<div class="contact_contact-adress">
 					<b>
 						Приезжайте в гости:
 					</b>
 					<br>
-					<span class="footer_adress">
+					<span class="contact_adress">
 						ул. Большая Конюшенная, 19/8
 					</span>
-				</section>
+				</div>
 			</div>
-	 	</footer>
-
-	 </body>
+		</div>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<div class="footer__pink">
+			<img src="#" width="30" height="30" alt="glasses">
+			<span>PINK</span>
+		</div>
+		<div class="footer__social">
+			<a href="#" class="footer__btn footer__btn__twitter"></a>
+			<a href="#" class="footer__btn footer__btn__facebook"></a>
+			<a href="#" class="footer__btn footer__btn__play"></a>
+		</div>
+		<div class="footer__copyright">
+			<span>
+				Разработано <a href="#" class="footer__copyright-sign"></a>
+			</span>
+		</div>
+	</footer>
+</body>
 </html>
