@@ -33,8 +33,19 @@
 		width: 320px;
 		height: 100px;
 		left: 0;
-		background-color: green;
-		/*background: url("../bg-triangle-white-footer.svg") repeat;*/
+		/*background-color: green;*/
+		background: url("../img/bg-triangle-white-footer.svg") no-repeat -135px -25px;
+		z-index: 5;
+	}
+	&__container::before {
+		content: "";
+		position: absolute;
+		width: 320px;
+		height: 100px;
+		left: 150px;
+		top: 520px;
+		/*background-color: green;*/
+		background: url("../img/icon-map-marker.svg") no-repeat;
 		z-index: 5;
 	}
 }

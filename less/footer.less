@@ -1,5 +1,89 @@
 @media @mobile-widths-only {
 	.footer {
-		display: none;
+		display: block;
+	}
+}
+.footer {
+		display: flex;
+		flex-wrap: wrap;
+		min-height: 290px;
+		background-color: #fff;
+
+	&__pink {
+		display: flex;
+		padding-top: 25px;
+		flex-basis: 100%;
+		justify-content: center;
+
+	}
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+		flex-basis: 100%;
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	&__btn {
+		position: relative;
+		width: 50px;
+	    height: 50px;
+	    border-radius: 50%;
+	    border: 3px solid #f2f3f4;
+	}
+	&__btn_twitter::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 17px;
+		height: 14px;
+		top: 35%;
+		left: 35%;
+		background: url("../img/icon-twitter.svg") no-repeat;
+	}
+	&__btn_facebook::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 17px;
+		height: 14px;
+		top: 35%;
+		left: 40%;
+		background: url("../img/icon-facebook.svg") no-repeat;
+	}
+	&__btn_youtube::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 17px;
+		height: 14px;
+		top: 40%;
+		left: 40%;
+		background: url("../img/icon-youtube.svg") no-repeat;
+	}
+	&__copyright {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+		justify-content: center;
+
+	}
+	&__copyright_text {
+		position: relative;
+		font-size: 14px;
+		line-height: 18px;
+		margin-right: 20px;
+	}
+	&__copyright_sign:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 26px;
+		height: 34px;
+		top: -10px;
+		left: 100px;
+		background: url("../img/logo-htmlacademy.svg") no-repeat;
+		z-index: 6;
 	}
 }
