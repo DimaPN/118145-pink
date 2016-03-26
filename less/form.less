@@ -1,0 +1,157 @@
+.form {
+		background-color: #fff;
+		margin: 0;
+		padding: 0;
+
+	&__text {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+		border: none;
+	}
+	&__title h2 {
+		margin: 0;
+		padding: 50px 20px 45px 20px;
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: normal;
+		text-align: center;
+	}
+	&__name, &__surname, &__patronymic {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom:20px;
+		.label_and_h2;
+	}
+	&__patronymic {
+		padding-bottom:45px;
+	}
+	/*form survey*/
+	&__checkbox {
+		display: flex;
+		flex-wrap: wrap;
+		border: none;
+		margin: 0;
+		background-color: #f2f2f2;
+	}
+	&__checkbox_title {
+		.label_and_h2;
+		text-align: center;
+	}
+	&__checkbox-name {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: normal;
+		margin-bottom: 45px;
+		padding: 0 20px;
+	}
+	/* FORM phone email */
+	&__connection {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 35px;
+		border: none;
+	}
+	&__phone, &__mail {
+		.label_and_h2;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&__mail {
+		padding-bottom: 55px;
+	}
+	/*form__apps*/
+	&__apps {
+		display: flex;
+		flex-wrap: wrap;
+		border: none;
+		margin: 0;
+		background-color: #f2f2f2;
+	}
+	&__apps_title {
+		.label_and_h2;
+		text-align: center;
+		padding-bottom: 35px;
+	}
+	&__apps_btn {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: normal;
+		margin-bottom: 35px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&__label_text {
+		padding-left: 25px;
+	}
+	&__emotion {
+		display: flex;
+		flex-wrap: wrap;
+		border: none;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #fff;
+	}
+	&__emotion_textarea{
+		.label_and_h2;
+		text-align: center;
+
+	}
+	&__btn {
+		width: 280px;
+		padding: 12px 20px;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		margin: 45px 20px 40px 20px;
+		background-color: #2aab6d;
+		cursor: pointer;
+	}
+	&__required {
+		display: block;
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+	}
+	&__required_asterix {
+		color: #e06b8b;
+	}
+
+}
+/*FORM name surname - label*/
+#name, #surname, #patronymic {
+	width: 270px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #f5f5f5;
+}
+/* FORM phone email */
+#phone, #mail {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #f5f5f5;
+}
+/*Form emotion*/
+#emo {
+	padding-top: 20px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: normal;
+	border: 2px solid #f5f5f5;
+}
+
