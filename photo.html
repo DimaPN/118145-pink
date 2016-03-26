@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<!--LOGO  need to add class header__toggle_opened-->
+				<h1 class="header__logo">
+					<a class="header__logo-text">Pink</a>
+					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+					<div class="header__toggle header__toggle_closed">
+					</div>
+				</h1>
+				<!--NAVIGATION need to remove display:none in less file-->
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Фотографии</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Конкурс</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Html Academy</a>
+						</li>
+					</ul>
+				</nav>
+				<!--Jumbotron-->
+				<div class="header__title">
+					Фотографии пользователей
+				</div>
+		 	</header>
+			<main>
+				<!--Title-->
+				<div class="photo-container">
+					<h2 class="photo-container__title">
+						Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+					</h2>
+					<!--Panorama-->
+					<img class="photo-container__panorama" src="img/panorama-mobile.jpg" width="320" height="135" alt="фото">
+					<div class="photo-container__description">
+						<b>Анна</b>(5 минут назад)<br>
+						<p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+						<span class="photo-container__like">
+							Нравится: 215
+						</span>
+					</div>
+					<!--Block photo-->
+					<div class="photo-container__wrapper">
+						<article class="photo-container__item">
+							<img src="img/photo-1-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Левон</b>(5 часов назад)<br>
+								<p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+								<span class="photo-container__like">Нравится: 356</span>
+							</div>
+						</article>
+						<article class="photo-container__item">
+							<img src="img/photo-2-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Антон</b>(12 часов назад)<br>
+								<p>Соседи будут рады!</p>
+								<span class="photo-container__like">Нравится: 666</span>
+							</div>
+						</article>
+						<article class="photo-container__item">
+							<img src="img/photo-3-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Борис</b>(20 часов назад)<br>
+								<p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+								<span class="photo-container__like">Нравится: 215</span>
+							</div>
+						</article>
+						<article class="photo-container__item">
+							<img src="img/photo-4-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Сергей</b>(25 часов назад)<br>
+								<p>Самая кубанская в мире!</p>
+								<span class="photo-container__like">Нравится: 4</span>
+							</div>
+						</article>
+						<article class="photo-container__item">
+							<img src="img/photo-5-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Максим</b>(40 часов назад)<br>
+								<p>Где снег-то?</p>
+								<span class="photo-container__like">Нравится: 150</span>
+							</div>
+						</article>
+						<article class="photo-container__item">
+							<img src="img/photo-6-mobile.jpg" width="280" height="180" alt="фото">
+							<div class="photo-container__description">
+								<b>Надежда</b>(45 часов назад)<br>
+								<p>Всем GM и взаимные лайки!</p>
+								<span class="photo-container__like">Нравится: 2560</span>
+							</div>
+						</article>
+						<span class="photo-container__promo">
+							Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+						</span>
+					</div>
+				</div>
+				<!--Edit picture-->
+				<div class="edit-image">
+					<img src="img/photo-7-mobile.jpg" width="280" height="375" alt="фото">
+					<div class="edit-image__elements">
+						<button class="edit-image__crop" type="button"></button>
+						<button class="edit-image__fill" type="button"></button>
+						<button class="edit-image__contrast" type="button"></button>
+					</div>
+					<!--Slider-->
+					<div class="slider-photo">
+						<div class="slider-photo__line"></div>
+						<div class="slider-photo__roller"></div>
+					</div>
+					<div class="control-element">
+						<input type="button" value="Запостить" class="control-element__btn">
+						<input type="button" value="Отмена" class="control-element__btn control-element__btn_inactive">
+					</div>
+				</div>
+			</main>
+			<!--Footer-->
+			<footer class="footer">
+				<div class="footer__pink">
+					<img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="glasses">
+					<!--<span>PINK</span>-->
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__btn footer__btn_twitter"></a>
+					<a href="#" class="footer__btn footer__btn_facebook"></a>
+					<a href="#" class="footer__btn footer__btn_youtube"></a>
+				</div>
+				<div class="footer__copyright">
+					<span class="footer__copyright_text">
+						Разработано <a href="#" class="footer__copyright_sign"></a>
+					</span>
+				</div>
+		 	</footer>
+		</div>
+ 	</body>
+</html>

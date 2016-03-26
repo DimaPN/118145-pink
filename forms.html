@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Forms</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet/less" type="text/css" href="styles.less">
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<!--LOGO  need to add class header__toggle_opened-->
+				<h1 class="header__logo">
+					<a class="header__logo-text">Pink</a>
+					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
+					<div class="header__toggle header__toggle_closed">
+					</div>
+				</h1>
+				<!--NAVIGATION need to remove display:none in less file-->
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Фотографии</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Конкурс</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Html Academy</a>
+						</li>
+					</ul>
+				</nav>
+				<!--Jumbotron-->
+		 		<div class="header__title">
+					Конкурс на самое безбашенное путешествие с Пинк
+				</div>
+		 	</header>
+		 	<main>
+				<!--FORM title-->
+				<div class="form">
+					<div class="form__title">
+						<h2>
+							Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!<br>Пожалуйста, заполните
+						</h2>
+					</div>
+					<form action="#" method="post">
+					<!--FORM name surname -->
+						<fieldset class="form__text">
+							<label for="name" class="form__name">
+								<span class="form__label_text">Имя:</span><br>
+								<input type="text" id="name" name="name" placeholder="Введите ваше имя">
+							</label>
+							<label for="surname" class="form__surname">
+								<span class="form__label_text">Фамилия:</span><br>
+								<input type="text" id="surname" name="surname" placeholder="Укажите фамилию">
+							</label>
+							<label for="patronymic" class="form__patronymic">
+								<span class="form__label_text">Отчество:</span><br>
+								<input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+							</label>
+						</fieldset>
+						<!--FORM survey-->
+						<fieldset class="form__checkbox">
+							<h2 class="form__checkbox_title">
+								Ваши безбашенные <br> достижения в путешествии
+							</h2>
+							<label for="first" class="form__checkbox-name">
+								<input type="checkbox" id="first" checked>
+								Сделал селфи с акулой
+							</label>
+
+							<label for="second" class="form__checkbox-name">
+								<input type="checkbox" id="second" checked>
+								Обгорел на пляже
+							</label>
+							<label for="third" class="form__checkbox-name">
+								<input type="checkbox" id="third">
+								Видел Чака Норриса
+							</label>
+							<label for="fourth" class="form__checkbox-name">
+								<input type="checkbox" id="fourth">
+								Накупил сувениров
+							</label>
+							<label for="fifth" class="form__checkbox-name">
+								<input type="checkbox" id="fifth" checked>
+								Удержал башню
+							</label>
+							<label for="sixth" class="form__checkbox-name">
+								<input type="checkbox" id="sixth">
+								Разгромил отель
+							</label>
+						</fieldset>
+						<!--FORM phone email-->
+						<fieldset class="form__connection">
+							<label for="phone" class="form__phone">
+								<span class="form__label_text">Номер телефончика</span>
+								<input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern>
+							</label>
+							<label for="mail" class="form__mail">
+								<span class="form__label_text">Адресок почты</span>
+								<input type="email" id="mail" name="mail" placeholder="E-mail, пожалуйста">
+							</label>
+						</fieldset>
+						<!--FORM apps-->
+						<fieldset class="form__apps">
+							<h2 class="form__apps_title">
+								С каким приложением <br> путешествовали?
+							</h2>
+							<label for="btn1" class="form__apps_btn">
+								<input type="radio" name="apps" value="iOS" id="btn1" checked>
+								Pink для iOS
+							</label>
+							<label for="btn2" class="form__apps_btn">
+								<input type="radio" name="apps" value="Android" id="btn2">
+								Pink на Android
+							</label>
+							<label for="btn3" class="form__apps_btn">
+								<input type="radio" name="apps" value="windows" id="btn3">
+								Windows Phone
+							</label>
+						</fieldset>
+						<!--FORM review-->
+						<fieldset class="form__emotion">
+							<h2 class="form__emotion_textarea">
+								Опишите свои эмоции
+							</h2>
+							<textarea name="emotion" id="emo" rows="6" cols="25">Можно прям в красках, не стесняясь в выражениях
+							</textarea>
+						</fieldset>
+						<!--BTN-->
+						<button class="form__btn" type="submit">Отправить форму
+						</button>
+						<span class="form__required">
+							<span class="form__required_asterix">*</span> - Обязательные поля
+						</span>
+					</form>
+				</div>
+		 	</main>
+		 	<!--Footer-->
+		 	<footer class="footer">
+				<div class="footer__pink">
+					<img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="glasses">
+					<!--<span>PINK</span>-->
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__btn footer__btn_twitter"></a>
+					<a href="#" class="footer__btn footer__btn_facebook"></a>
+					<a href="#" class="footer__btn footer__btn_youtube"></a>
+				</div>
+				<div class="footer__copyright">
+					<span class="footer__copyright_text">
+						Разработано <a href="#" class="footer__copyright_sign"></a>
+					</span>
+				</div>
+		 	</footer>
+		</div>
+	</body>
+</html>

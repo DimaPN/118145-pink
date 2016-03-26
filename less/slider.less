@@ -1,0 +1,33 @@
+.slider {
+		position: relative;
+		min-height: 330px;
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 45px;
+		background-color: #fff;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 360px;
+		left: 0;
+		width: 320px;
+		height: 150px;
+		/*background-color: green;*/
+		opacity: 1;
+		background: url('../img/bg-triangle-white.svg') no-repeat;
+		z-index: 5;
+	}
+	&__slide1 b {
+		font-size: 18px;
+		line-height: 30px;
+		color: #000;
+	}
+	&__slide1 p {
+		font-size: 14px;
+		line-height: 30px;
+		color: #000;
+		padding-bottom: 40px;
+	}
+ }
