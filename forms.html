@@ -10,7 +10,7 @@
 		<div class="container">
 			<header class="header">
 				<!--LOGO  need to add class header__toggle_opened-->
-				<h1 class="header__logo">
+				<h1 class="header__logo header__toggle_opened">
 					<a class="header__logo-text">Pink</a>
 					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
 					<div class="header__toggle header__toggle_closed">
@@ -42,31 +42,29 @@
 				<!--FORM title-->
 				<div class="form">
 					<div class="form__title">
-						<h2>
-							Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!<br>Пожалуйста, заполните
-						</h2>
+						Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!<br>Пожалуйста, заполните
 					</div>
 					<form action="#" method="post">
 					<!--FORM name surname -->
-						<fieldset class="form__text">
-							<label for="name" class="form__name">
-								<span class="form__label_text">Имя:</span><br>
-								<input type="text" id="name" name="name" placeholder="Введите ваше имя">
+						<div class="form__text">
+							<label class="form__name">
+								<span class="form__label-text">Имя:</span>
+								<input type="text" name="name" placeholder="Введите ваше имя">
 							</label>
-							<label for="surname" class="form__surname">
-								<span class="form__label_text">Фамилия:</span><br>
-								<input type="text" id="surname" name="surname" placeholder="Укажите фамилию">
+							<label class="form__name">
+								<span class="form__label-text">Фамилия:</span>
+								<input type="text" name="surname" placeholder="Укажите фамилию">
 							</label>
-							<label for="patronymic" class="form__patronymic">
-								<span class="form__label_text">Отчество:</span><br>
-								<input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+							<label class="form__name">
+								<span class="form__label-text">Отчество:</span>
+								<input type="text" name="patronymic" placeholder="Ну и отчество тоже">
 							</label>
-						</fieldset>
+						</div>
 						<!--FORM survey-->
 						<fieldset class="form__checkbox">
-							<h2 class="form__checkbox_title">
+							<legend class="form__checkbox_title">
 								Ваши безбашенные <br> достижения в путешествии
-							</h2>
+							</legend>
 							<label for="first" class="form__checkbox-name">
 								<input type="checkbox" id="first" checked>
 								Сделал селфи с акулой

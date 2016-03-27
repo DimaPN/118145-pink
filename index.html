@@ -4,7 +4,11 @@
 	<meta charset="utf-8">
 	<title>Pink</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet/less" type="text/css" href="styles.less">
+	<!--<style>
+		@font-face {
+			src: url("fonts/opensans.woff");
+		}
+	</style>-->
 </head>
 <body>
 	<div class="container">
@@ -13,8 +17,8 @@
 			<h1 class="header__logo">
 				<span class="header__logo-text">Pink</span>
 				<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
-				<div class="header__toggle header__toggle_closed">
-				</div>
+				<span class="header__toggle header__toggle_closed">
+				</span>
 			</h1>
 			<!--NAVIGATION need to remove display:none in less file-->
 			<nav class="main-nav">
@@ -119,20 +123,25 @@
 					<table class="slider-table__list">
 						<thead class="slider-table__head">
 							<tr class="slider-table__head-row">
-								<th class="slider-table__head1">
-									<b>База</b>
+								<th class="slider-table__head">
+								</th>
+								<th class="slider-table__head">
+									<div class="slider-table__promo">Хит</div>
+									<span class="slider-table__title">База</span>
 									<br>
 									1,99 USD
 								</th>
-								<th class="slider-table__head2">
-									<b>
+								<th class="slider-table__head">
+									<div class="slider-table__promo">Хит</div>
+									<span class="slider-table__title">
 										Стандарт
-									</b>
+									</span>
 									<br>
 									3,99 USD
 								</th>
-								<th class="slider-table__head3">
-									<b>Анлим</b>
+								<th class="slider-table__head">
+									<div class="slider-table__promo">Хит</div>
+									<span class="slider-table__title">Анлим</span>
 									<br>
 									9,99 USD
 								</th>
@@ -145,9 +154,18 @@
 								</td>
 								<td class="slider-table__function">
 									Розовый фильтр
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Розовый фильтр
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
+								</td>
+								<td class="slider-table__function">
+									Розовый фильтр
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 							<tr class="slider-table__body-row">
@@ -156,9 +174,18 @@
 								</td>
 								<td class="slider-table__function">
 									Смайлики
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Смайлики
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
+								</td>
+								<td class="slider-table__function">
+									Смайлики
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 							<tr class="slider-table__body-row">
@@ -167,9 +194,18 @@
 								</td>
 								<td class="slider-table__function">
 									Комментирии
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Комментирии
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
+								</td>
+								<td class="slider-table__function">
+									Комментирии
+									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 						</tbody>
@@ -191,27 +227,27 @@
 						Остались вопросы?<br>Свяжитесь с нами!
 					</h2>
 					<div class="contact__info">
-						<b>
+						<span class="contact__text">
 							Звоните:
-						</b>
+						</span>
 						<br>
 						<span class="contact__method">
 							7(812) 555-66-66
 						</span>
 					</div>
 					<div class="contact__info">
-						<b>
+						<span class="contact__text">
 							Пишите:
-						</b>
+						</span>
 						<br>
 						<span class="contact__method">
 							mail@htmlacademy.ru
 						</span>
 					</div>
 					<div class="contact__info">
-						<b>
+						<span class="contact__text">
 							Приезжайте в гости:
-						</b>
+						</span>
 						<br>
 						<span class="contact__method">
 							ул. Большая Конюшенная, 19/8
@@ -232,11 +268,11 @@
 				<a href="#" class="footer__btn footer__btn_youtube"></a>
 			</div>
 			<div class="footer__copyright">
-				<span>
+				<span class="footer__copyright_text">
 					Разработано <a href="#" class="footer__copyright_sign"></a>
 				</span>
 			</div>
-		</footer>
+	 	</footer>
 	</div>
 </body>
 </html>

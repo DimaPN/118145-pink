@@ -32,6 +32,12 @@
 	    border-radius: 50%;
 	    border: 3px solid #f2f3f4;
 	}
+	&__btn:hover {
+		border: 3px solid #283645;
+	}
+	&__btn:active {
+		opacity: 0.7;
+	}
 	&__btn_twitter::before {
 		content: "";
 		position: absolute;
@@ -46,8 +52,8 @@
 		content: "";
 		position: absolute;
 		display: block;
-		width: 17px;
-		height: 14px;
+		width: 9px;
+		height: 19px;
 		top: 35%;
 		left: 40%;
 		background: url("../img/icon-facebook.svg") no-repeat;
@@ -75,8 +81,7 @@
 		line-height: 18px;
 		margin-right: 20px;
 	}
-	&__copyright_sign:before {
-		content: "";
+	&__copyright_sign {
 		position: absolute;
 		display: block;
 		width: 26px;
@@ -85,5 +90,11 @@
 		left: 100px;
 		background: url("../img/logo-htmlacademy.svg") no-repeat;
 		z-index: 6;
+	}
+	&__copyright_sign:hover {
+		background: url("../img/logo-htmlacademyHVR.svg") no-repeat;
+	}
+	&__copyright_sign:active {
+		opacity: 0.5;
 	}
 }

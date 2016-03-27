@@ -3,7 +3,7 @@
 		background-color: #f2f2f2;
 		padding-top: 65px;
 		text-align: center;
-		overflow: hidden;
+		/*overflow: hidden;*/
 
 	&__block {
 		position: relative;
@@ -11,7 +11,7 @@
 	}
 	&__list {
 		position: absolute;
-		width: 825px;
+		width: 1100px;
 		border-collapse: collapse;
 		opacity: 1;
 		margin-top: 65px;
@@ -25,34 +25,37 @@
 		line-height: 30px;
 		text-align: center;
 	}
-	&__head b {
+	&__title {
 		font-size: 18px;
+		font-weight: bold;
 	}
-	&__head1 {
+	&__head {
 		border-right: 2px solid #eeeeee;
 		border-left: 2px solid #eeeeee;
 		height: 95px;
 	}
-	&__head2 {
-		border-right: 2px solid #eeeeee;
-		border-left: 2px solid #eeeeee;
-	}
-	&__head3 {
-		border-right: 2px solid #eeeeee;
-		border-left: 2px solid #eeeeee;
-	}
 	&__head-row {
 		position: relative;
 	}
-	&__head2::before {
+	&__head::before {
 		content: "";
 		position: absolute;
 		width: 74px;
 		height: 73px;
-		background-color: red;
+		background-color: green;
 		top: 0;
 		left: 280px;
 		/*background: url("../img/bg-hit.svg") no-repeat;*/
+	}
+	&__promo {
+		position: absolute;
+		font-size: 14px;
+		color: #fff;
+		padding-left: 15px;
+		font-weight: 300;
+		z-index: 5;
+		text-transform: uppercase;
+		transform: rotate(-45deg);
 	}
 	&__body {
 		background-color: #fff;
@@ -67,14 +70,25 @@
 		border: 2px solid #eeeeee;
 		padding: 0 20px;
 	}
-	&__body-row {
+	&__function {
 		position: relative;
 	}
-	&__function::after {
+	&__indicator-yes::after {
 		content: "";
 		position: absolute;
+		top: 20px;
+		left: 230px;
 		width: 50px;
 		height: 50px;
 		background: url("../img/icon-yes.svg") no-repeat;
+	}
+	&__indicator-no::after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 230px;
+		width: 50px;
+		height: 50px;
+		background: url("../img/icon-no.svg") no-repeat;
 	}
 }
