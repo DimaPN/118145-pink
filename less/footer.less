@@ -1,20 +1,27 @@
-@media @mobile-widths-only {
+/*@media @mobile-widths-only {
 	.footer {
 		display: block;
 	}
-}
+}*/
 .footer {
 		display: flex;
 		flex-wrap: wrap;
 		min-height: 290px;
 		background-color: #fff;
+		align-items: center;
 
 	&__pink {
-		display: flex;
-		padding-top: 25px;
-		flex-basis: 100%;
-		justify-content: center;
-
+		background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+		flex-basis: 50%;
+		height: 40px;
+		cursor: pointer;
+	}
+	&__pink:hover {
+		background: url("../img/logo-pink-red-mobile.svg") no-repeat;
+	}
+	&__pink:active {
+		background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+		opacity: 0.6;
 	}
 	&__social {
 		display: flex;

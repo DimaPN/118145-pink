@@ -28,3 +28,63 @@
 		height: 320px;
 	}
 }
+
+@media @mobile-widths-only {
+	.promo-container2 {
+		display: none;
+	}
+}
+
+@media @tablet-widths-only {
+	.promo-container {
+
+	}
+	.promo-container__slogan {
+		display: inline-block;
+		width: 320px;
+		float: right;
+		text-align: left;
+		padding-right: 40px;
+		padding-bottom: 40px;
+	}
+	.promo-container__slogan:first-child {
+		padding-top: 85px;
+	}
+	.promo-container__image {
+		position: absolute;
+		background: url('../img/iphone-screen-tablet-3@1x.png') no-repeat 10px -10px;
+		min-height: 465px;
+		top: 18px;
+		left: 20px;
+		width: 280px;
+		height: 100px;
+		z-index: 10;
+	}
+	.promo-container2 {
+		font-size: 14px;
+		line-height: 24px;
+		.clearfix();
+	}
+	.promo-container2__text {
+		display: inline-block;
+		width: 310px;
+		float: right;
+		text-align: left;
+		margin-top: 95px;
+		margin-bottom: 130px;
+		margin-right: 40px;
+	}
+	.promo-container2 b {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.promo-container2 a {
+		color: #d22856;
+	}
+	.promo-container2__img {
+		width: 298px;
+		height: 345px;
+		background: url("../img/icon-timer.svg") no-repeat;
+		z-index: 15;
+	}
+}

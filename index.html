@@ -4,21 +4,25 @@
 	<meta charset="utf-8">
 	<title>Pink</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<style>
+	<style>
 		@font-face {
 			src: url("fonts/opensans.woff");
+			src: url("fonts/opensans.woff2");
+			src: url("fonts/opensansbold.woff");
+			src: url("fonts/opensansbold.woff2");
+			src: url("fonts/opensanslight.woff");
+			src: url("fonts/opensanslight.woff2");
 		}
-	</style>-->
+	</style>
 </head>
 <body>
 	<div class="container">
 		<header class="header">
-			<!--LOGO  need to add class header__toggle_opened-->
 			<h1 class="header__logo">
-				<span class="header__logo-text">Pink</span>
-				<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
-				<span class="header__toggle header__toggle_closed">
-				</span>
+				<a class="header__logo-text">Pink</a>
+				<div class="header__img"></div>
+				<div class="header__toggle header__toggle_closed">
+				</div>
 			</h1>
 			<!--NAVIGATION need to remove display:none in less file-->
 			<nav class="main-nav">
@@ -93,6 +97,24 @@
 				</li>
 			</ul>
 			<!--Slider 1-->
+			<div class="promo-container2">
+				<div class="promo-container2__text">
+					<b>
+						Эффект на 24 часа!
+					</b>
+
+					<p>
+						Британские ученые провели исследования
+						и доказали, что положительный эффект
+						от использования приложения длится
+						целые сутки!
+					</p>
+					<a href="#">
+						Узнать больше об исследовании
+					</a>
+				</div>
+				<div class="promo-container2__img"></div>
+			</div>
 			<div class="slider">
 				<div class="slider__slides">
 					<div class="slider__slide1">
@@ -155,17 +177,14 @@
 								<td class="slider-table__function">
 									Розовый фильтр
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Розовый фильтр
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Розовый фильтр
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 							<tr class="slider-table__body-row">
@@ -174,18 +193,15 @@
 								</td>
 								<td class="slider-table__function">
 									Смайлики
-									<div class="slider-table__indicator-yes"></div>
 									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Смайлики
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Смайлики
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 							<tr class="slider-table__body-row">
@@ -194,18 +210,15 @@
 								</td>
 								<td class="slider-table__function">
 									Комментирии
-									<div class="slider-table__indicator-yes"></div>
+									<div class="slider-table__indicator-no"></div>
+								</td>
+								<td class="slider-table__function">
+									Комментирии
 									<div class="slider-table__indicator-no"></div>
 								</td>
 								<td class="slider-table__function">
 									Комментирии
 									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
-								</td>
-								<td class="slider-table__function">
-									Комментирии
-									<div class="slider-table__indicator-yes"></div>
-									<div class="slider-table__indicator-no"></div>
 								</td>
 							</tr>
 						</tbody>
@@ -259,7 +272,7 @@
 		<!--Footer-->
 		<footer class="footer">
 			<div class="footer__pink">
-				<img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="glasses">
+
 				<!--<span>PINK</span>-->
 			</div>
 			<div class="footer__social">

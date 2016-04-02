@@ -7,10 +7,10 @@
 	&::after {
 		content: "";
 		position: absolute;
-		top: 183px;
+		top: 190px;
 		left: -1px;
 		width: 320px;
-		height: 150px;
+		height: 100px;
 		background: url('../img/bg-triangle-white.svg') no-repeat;
 		z-index: 5;
 	}
@@ -25,5 +25,29 @@
 	}
 	&__text:last-child {
 		padding-top: 25px;
+	}
+}
+
+@media @tablet-widths-only {
+	.promo::after {
+		content: "";
+		position: absolute;
+		top: 220px;
+		left: -1px;
+		width: 700px;
+		height: 100px;
+		background: url('../img/bg-triangle-white.svg') no-repeat;
+		z-index: 5;
+	}
+	.promo__text {
+		font-size: 40px;
+		padding: 0;
+		margin: 0;
+	}
+	.promo__text:last-child {
+		padding-top: 0;
+		padding-left: 70px;
+		padding-right: 70px;
+
 	}
 }

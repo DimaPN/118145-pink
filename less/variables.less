@@ -1,6 +1,6 @@
 @mobile-widths-only: ~"(max-width: 767px)";
-@tablet-widths: ~"(min-width: 768px)";
-@desktop-widths: ~"(min-width: 1200px)";
+@tablet-widths-only: ~"(min-width: 768px)";
+@desktop-widths-only: ~"(min-width: 1200px)";
 @bg-white: #cdf7f6;
 
 
@@ -9,12 +9,14 @@
   margin: 0 auto;
   background-color: #fff;
 
-  @media @tablet-widths {
+  @media @tablet-widths-only {
     width: 700px;
-  }
+    margin: 0 auto;
+ }
 
-  @media @desktop-widths {
+  @media @desktop-widths-only {
     width: 1200px;
-  }
+    margin: 0 auto;
+ }
 }
 

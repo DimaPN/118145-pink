@@ -1,10 +1,16 @@
 .photo-container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
 		position: relative;
 
-	&__title {
+	&__promo {
+		display: flex;
+		flex-wrap: wrap;
 		padding-left: 20px;
 		padding-right: 20px;
-		padding-top: 50px;
+		padding-top: 40px;
 		padding-bottom: 55px;
 		color: #000;
 		font-size: 14px;
@@ -18,27 +24,26 @@
 		width: 140px;
 		height: 35px;
 		background-color: #d22856;
-		top: 206px;
+		top: 195px;
 		left: 160px;
 		color: #fff;
 		text-transform: uppercase;
 	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__description {
+		width: 280px;
 		margin-top: 0;
 		margin-bottom: 20px;
-		margin-left: 20px;
-		margin-right: 20px;
-		padding-top: 20px;
-		padding-right: 20px;
-		padding-left: 20px;
-		padding-bottom: 20px;
+		padding: 20px;
 		background-color: #f2f2f2;
 		font-size: 14px;
 		line-height: 24px;
-	}
-	&__item img {
-		margin-left: 20px;
-		margin-bottom: 0;
+		box-sizing: border-box;
 	}
 	&__like {
 		position: relative;
@@ -46,6 +51,7 @@
 		line-height: 24px;
 		color: #d22856;
 		padding-left: 50px;
+		text-transform: uppercase;
 	}
 	&__like::before {
 		content: "";
@@ -56,12 +62,5 @@
 		left: 10px;
 		background: url("../img/icon-heart.svg") no-repeat;
 	}
-	&__promo {
-		display: block;
-		font-size: 14px;
-		line-height: 30px;
-		padding-left: 20px;
-		padding-right: 20px;
-		text-align: center;
-	}
 }
+

@@ -2,6 +2,10 @@
 		background-color: #f2f2f2;
 		min-height: 755px;
 
+	&__picture {
+		padding-left: 20px;
+		padding-top: 20px;
+	}
 	&__elements {
 		display: flex;
 		flex-wrap: wrap;
@@ -12,35 +16,25 @@
 		margin-right: 30px;
 
 	}
-	&__crop {
+	&__element {
+		padding: 0;
+		margin: 0;
+		width: 60px;
+		height: 60px;
+		border: none;
+		opacity: 0.5;
+	}
+	&__element_crop {
 		background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-		padding: 0;
-		margin: 0;
-		width: 60px;
-		height: 60px;
-		border: none;
 	}
-	&__contrast {
+	&__element_contrast {
 		background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-		padding: 0;
-		margin: 0;
-		width: 60px;
-		height: 60px;
-		border: none;
 	}
-	&__fill {
+	&__element_fill {
 		background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-		padding: 0;
-		margin: 0;
-		width: 60px;
-		height: 60px;
-		border: none;
 	}
+	&__element_crop:hover {
+		background-color: #d22856;
+	}
+}
 
-}
-.edit-image img {
-	display: flex;
-	flex-wrap: wrap;
-	padding-left: 20px;
-	padding-top: 20px;
-}

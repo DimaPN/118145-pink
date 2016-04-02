@@ -4,17 +4,27 @@
 		<meta charset="UTF-8">
 		<title>Photo</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			@font-face {
+				src: url("fonts/opensans.woff");
+				src: url("fonts/opensans.woff2");
+				src: url("fonts/opensansbold.woff");
+				src: url("fonts/opensansbold.woff2");
+				src: url("fonts/opensanslight.woff");
+				src: url("fonts/opensanslight.woff2");
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
 			<header class="header">
-				<!--LOGO  need to add class header__toggle_opened-->
 				<h1 class="header__logo">
 					<a class="header__logo-text">Pink</a>
 					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
 					<div class="header__toggle header__toggle_closed">
 					</div>
 				</h1>
+
 				<!--NAVIGATION need to remove display:none in less file-->
 				<nav class="main-nav">
 					<ul class="main-nav__list">
@@ -40,9 +50,9 @@
 			<main>
 				<!--Title-->
 				<div class="photo-container">
-					<h2 class="photo-container__title">
+					<div class="photo-container__promo">
 						Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-					</h2>
+					</div>
 					<!--Panorama-->
 					<img class="photo-container__panorama" src="img/panorama-mobile.jpg" width="320" height="135" alt="фото">
 					<div class="photo-container__description">
@@ -55,7 +65,7 @@
 					<!--Block photo-->
 					<div class="photo-container__wrapper">
 						<article class="photo-container__item">
-							<img src="img/photo-1-mobile.jpg" width="280" height="180" alt="фото">
+							<img class="photo-container__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="фото">
 							<div class="photo-container__description">
 								<b>Левон</b>(5 часов назад)<br>
 								<p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -109,11 +119,11 @@
 				</div>
 				<!--Edit picture-->
 				<div class="edit-image">
-					<img src="img/photo-7-mobile.jpg" width="280" height="375" alt="фото">
+					<img class="edit-image__picture" src="img/photo-7-mobile.jpg" width="280" height="375" alt="фото">
 					<div class="edit-image__elements">
-						<button class="edit-image__crop" type="button"></button>
-						<button class="edit-image__fill" type="button"></button>
-						<button class="edit-image__contrast" type="button"></button>
+						<button class="edit-image__element edit-image__element_crop " type="button"></button>
+						<button class="edit-image__element edit-image__element_fill" type="button"></button>
+						<button class="edit-image__element edit-image__element_contrast" type="button"></button>
 					</div>
 					<!--Slider-->
 					<div class="slider-photo">
@@ -121,17 +131,17 @@
 						<div class="slider-photo__roller"></div>
 					</div>
 					<div class="control-element">
-						<input type="button" value="Запостить" class="control-element__btn">
-						<input type="button" value="Отмена" class="control-element__btn control-element__btn_inactive">
+						<button class="control-element__btn" type="submit">Запостить
+						</button>
+						<button  class="control-element__btn control-element__btn_inactive" type="submit">Отмена
+						</button>
 					</div>
 				</div>
 			</main>
 			<!--Footer-->
 			<footer class="footer">
-				<div class="footer__pink">
-					<img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="glasses">
-					<!--<span>PINK</span>-->
-				</div>
+				<a href="#" class="footer__pink">
+				</a>
 				<div class="footer__social">
 					<a href="#" class="footer__btn footer__btn_twitter"></a>
 					<a href="#" class="footer__btn footer__btn_facebook"></a>

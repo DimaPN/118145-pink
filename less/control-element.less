@@ -4,8 +4,7 @@
 
 	&__btn {
 		display: block;
-		text-decoration: none;
-		color: #fff;
+		color: #d22856;
 		font-size: 18px;
 		font-weight: bold;
 		text-align: center;
@@ -15,10 +14,29 @@
 		width: 280px;
 		margin-left: 20px;
 		margin-bottom: 20px;
-		color: #d22856;;
+		background-color: transparent;
+		cursor: pointer;
+	}
+	&__btn:hover {
+		background-color: #d22856;
+		color: #fff;
+	}
+	&__btn:active {
+		opacity: 0.7;
 	}
 	&__btn_inactive {
-		color: #f2f2f2;
-		border: 3px solid #dddfe0;
+		color: #b5b9be;
+		border: 3px solid #b5b9be;
+		opacity: 0.5;
+	}
+	&__btn_inactive:hover {
+		opacity: 1;
+		background-color: transparent;
+		color: #c4c6c8;
+	}
+	&__btn_inactive:active {
+		opacity: 1;
+		background-color: #b5b9be;
+		color: #cdd0d3;
 	}
 }
