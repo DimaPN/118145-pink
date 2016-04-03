@@ -18,30 +18,31 @@
 	<body>
 		<div class="container">
 			<header class="header">
-				<!--LOGO  need to add class header__toggle_opened-->
-				<h1 class="header__logo">
-					<a class="header__logo-text">Pink</a>
-					<img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
-					<div class="header__toggle header__toggle_closed">
-					</div>
-				</h1>
-				<!--NAVIGATION need to remove display:none in less file-->
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Главная</a>
-						</li>
-						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Фотографии</a>
-						</li>
-						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Конкурс</a>
-						</li>
-						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Html Academy</a>
-						</li>
-					</ul>
-				</nav>
+				<input class="header__checkbox" type="checkbox" id="toggle">
+				<div class="header__block">
+					<h1 class="header__logo">
+						<a class="header__logo-text">Pink</a>
+					</h1>
+					<label for="toggle" class="header__toggle">
+						<span class="header__toggle-hamburger"></span>
+					</label>
+					<nav class="main-nav">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#">Главная</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#">Фотографии</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#">Конкурс</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="#">Html Academy</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 				<!--Jumbotron-->
 		 		<div class="header__title">
 					Конкурс на самое безбашенное путешествие с Пинк
